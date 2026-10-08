@@ -1,0 +1,77 @@
+{
+    "version": 1,
+    "name": "SpaceActions",
+    "maps": [
+        {
+            "name": "ShipMap",
+            "id": "75c6430b-7ebc-40a7-8bdb-0c5a562fc2e9",
+            "actions": [
+                {
+                    "name": "RotateEngine",
+                    "type": "Value",
+                    "id": "3dbd9d01-e316-49d3-841c-95e8d5a6c314",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "EngineActivate",
+                    "type": "Button",
+                    "id": "b491a66a-320a-4932-aff4-81ce063f34c7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "8e8d00a0-aed3-47f5-aa8a-19a38d6d1b43",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateEngine",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "914ab7e5-0974-4cdd-9afe-51ec32acfbe4",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateEngine",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5fe7d476-8ed7-43e8-9768-1d84a4188335",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateEngine",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b39ce7f3-1c26-4905-9c8e-23751746f421",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EngineActivate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
