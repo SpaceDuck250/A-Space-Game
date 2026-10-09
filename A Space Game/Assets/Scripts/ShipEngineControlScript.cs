@@ -10,7 +10,9 @@ public class ShipEngineControlScript : MonoBehaviour
 
     [Tooltip("Move")]
     public float engineSpeed;
-    public Vector3 shipMoveDirection => -Vector3.Normalize(enginePoint.position - transform.position);
+    //public Vector3 shipMoveDirection => -Vector3.Normalize(enginePoint.position - transform.position);
+    public Vector3 shipMoveDirection => rotatePoint.up;
+
 
     public Rigidbody2D rb;
 
